@@ -1,0 +1,189 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/*Get font from fonts folder and make new font called delta*/
+@font-face {
+    font-family: waffle; /* set name */
+    src: url(../fonts/Waffle_Soft.otf); /* url of the font */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: garet; /* set name */
+    src: url(../fonts/Garet-Book.otf); /* url of the font */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@theme {
+    --font-sans: 'garet', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-serif: 'Roboto Slab', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --color-sandy-brown-50: #fef3e6;
+    --color-sandy-brown-100: #fee7cd;
+    --color-sandy-brown-200: #fdcf9b;
+    --color-sandy-brown-300: #fcb769;
+    --color-sandy-brown-400: #fba037;
+    --color-sandy-brown-500: #fa8805;
+    --color-sandy-brown-600: #c86d04;
+    --color-sandy-brown-700: #965103;
+    --color-sandy-brown-800: #643602;
+    --color-sandy-brown-900: #321b01;
+    --color-sandy-brown-950: #231301;
+
+    --color-light-green-50: #eefce9;
+    --color-light-green-100: #ddf8d3;
+    --color-light-green-200: #bcf2a6;
+    --color-light-green-300: #9aeb7a;
+    --color-light-green-400: #78e44e;
+    --color-light-green-500: #57de21;
+    --color-light-green-600: #45b11b;
+    --color-light-green-700: #348514;
+    --color-light-green-800: #23590d;
+    --color-light-green-900: #112c07;
+    --color-light-green-950: #0c1f05;
+
+    --color-lime-cream-50: #fbfce8;
+    --color-lime-cream-100: #f7f9d2;
+    --color-lime-cream-200: #eff3a5;
+    --color-lime-cream-300: #e8ed78;
+    --color-lime-cream-400: #e0e84a;
+    --color-lime-cream-500: #d8e21d;
+    --color-lime-cream-600: #adb517;
+    --color-lime-cream-700: #828712;
+    --color-lime-cream-800: #565a0c;
+    --color-lime-cream-900: #2b2d06;
+    --color-lime-cream-950: #1e2004;
+
+    --color-dusty-olive-50: #f1f4f0;
+    --color-dusty-olive-100: #e3eae1;
+    --color-dusty-olive-200: #c7d5c3;
+    --color-dusty-olive-300: #acc0a5;
+    --color-dusty-olive-400: #90aa88;
+    --color-dusty-olive-500: #74956a;
+    --color-dusty-olive-600: #5d7755;
+    --color-dusty-olive-700: #465a3f;
+    --color-dusty-olive-800: #2e3c2a;
+    --color-dusty-olive-900: #171e15;
+    --color-dusty-olive-950: #10150f;
+
+    --color-granite-50: #f0f4f3;
+    --color-granite-100: #e1eae6;
+    --color-granite-200: #c4d4ce;
+    --color-granite-300: #a6bfb5;
+    --color-granite-400: #89a99d;
+    --color-granite-500: #6b9484;
+    --color-granite-600: #56766a;
+    --color-granite-700: #40594f;
+    --color-granite-800: #2b3b35;
+    --color-granite-900: #151e1a;
+    --color-granite-950: #0f1513;
+
+    --color-accent: var(--color-zinc-800);
+    --color-accent-content: var(--color-zinc-800);
+    --color-accent-foreground: var(--color-white);
+
+    /* make variables for new fonts*/
+    --font-header: 'waffle', serif;
+    --font-main: 'garet',sans-serif;
+
+}
+
+
+
+
+
+@layer theme {
+    .dark {
+        --color-accent: var(--color-white);
+        --color-accent-content: var(--color-white);
+        --color-accent-foreground: var(--color-zinc-800);
+
+    }
+}
+
+@layer base {
+
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+}
+
+[data-flux-field]:not(ui-radio, ui-checkbox) {
+    @apply grid gap-2;
+}
+
+[data-flux-label] {
+    @apply  !mb-0 !leading-tight;
+}
+
+input:focus[data-flux-control],
+textarea:focus[data-flux-control],
+select:focus[data-flux-control] {
+    @apply outline-hidden ring-2 ring-accent ring-offset-2 ring-offset-accent-foreground;
+}
+
+[contenteditable]:focus{
+    padding: 5px ;
+    display: inline-block;
+}
+
+.shine {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        background: linear-gradient(
+            to right,
+            fade_out(#fff, 1) 0%,
+            fade_out(#fff, 0.7) 100%
+        );
+        content: "";
+        display: block;
+        height: 100%;
+        left: -75%;
+        position: absolute;
+        top: 0;
+        transform: skewX(-25deg);
+        width: 50%;
+        z-index: 2;
+    }
+
+    &:hover,
+    &:focus {
+        &::before {
+            animation: shine 0.85s;
+        }
+    }
+
+    @keyframes shine {
+        100% {
+            left: 125%;
+        }
+    }
+}
+
+.image-wrapper {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 6px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+}
