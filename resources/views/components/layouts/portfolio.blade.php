@@ -15,7 +15,7 @@
 </head>
 <body class="bg-dusty-olive-50 relative">
 <x-navbar/>
-<h1 class="text-6xl text-center font-header my-8">{{$title?? ''}}</h1>
+<h1 class="text-6xl text-center font-header my-12">{{$title?? ''}}</h1>
 <div class="mx-5">
 {{$slot}}
 </div>

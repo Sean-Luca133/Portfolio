@@ -1,5 +1,5 @@
-<div {{$attributes->merge(["class"=>""])}} x-data="{show_animation:false}" class="relative">
-    <figure @mouseenter="show_animation=true" class="flex gap-4 p-1 transition-all duration-200" :class="{'rounded bg-green-300 border-2 border-black dark:border-white !gap-0':show_animation}">
+<div {{$attributes->merge(["class"=>""])}} x-data="{seperate:false}" class="relative ">
+    <figure @mouseenter="seperate=true" @mouseleave="seperate=false" :class="{'!gap-4 !border-2 !border-sandy-brown-300':seperate}" class="cursor-pointer flex p-1 rounded bg-green-300  border-b-4 border-r-4 border-black dark:border-white gap-0 transition-all duration-200">
         <img class="w-6" src="/storage/logo_left.png"/>
         <img class="w-6" src="/storage/logo_right.png"/></figure>
 </div>
