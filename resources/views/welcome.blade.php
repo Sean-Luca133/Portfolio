@@ -57,9 +57,9 @@
     {{-- Intro cards --}}
     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 my-8">
 
-        <x-intro_card title="About me" description="Who I am, where I come from, and what drives me to keep building things." route="about_me" bg_color="bg-sandy-brown-100" footer_color="bg-sandy-brown-200" label="GET TO KNOW ME"/>
-        <x-intro_card title="Projects" description="A collection of things I've built — side projects, experiments and real work." route="projects" bg_color="bg-light-green-100" footer_color="bg-light-green-200" label="SEE MY WORK"/>
-        <x-intro_card title="Cv" description="My education, experience, and skills — the full picture in one place." route="cv" bg_color="bg-granite-100" footer_color="bg-granite-200" label="VIEW CV"/>
+        <x-intro_card title="About me" description="Who I am, where I come from, and what drives me to keep building things." route="about_me" bg_color="bg-sandy-brown-100" footer_color="bg-sandy-brown-200 hover:bg-sandy-brown-300" label="GET TO KNOW ME"/>
+        <x-intro_card title="Projects" description="A collection of things I've built — side projects, experiments and real work." route="projects" bg_color="bg-light-green-100" footer_color="bg-light-green-200 hover:bg-light-green-300" label="SEE MY WORK"/>
+        <x-intro_card title="Cv" description="My education, experience, and skills — the full picture in one place." route="cv" bg_color="bg-granite-100" footer_color="bg-granite-200 hover:bg-granite-300" label="VIEW CV"/>
 
     </div>
 
