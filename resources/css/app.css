@@ -5,6 +5,12 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+/* hover selection colors */
+*::selection {
+    color: #fa8805;
+    background-color: #c6f1b5;
+}
+
 /*Get font from fonts folder and make new font called delta*/
 @font-face {
     font-family: waffle; /* set name */
@@ -140,9 +146,3 @@ textarea:focus[data-flux-control],
 select:focus[data-flux-control] {
     @apply outline-hidden ring-2 ring-accent ring-offset-2 ring-offset-accent-foreground;
 }
-
-[contenteditable]:focus{
-    padding: 5px ;
-    display: inline-block;
-}
-
