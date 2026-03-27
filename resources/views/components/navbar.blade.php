@@ -14,6 +14,15 @@ $current = basename($_SERVER['REQUEST_URI']);
             <li class="{{$current == 'projects'? '!bg-orange-300':''}}"><a href="{{route('projects')}}">Projects</a></li>
             <li class="{{$current == 'cv'? '!bg-orange-300':''}} rounded-e border-e-2"><a href="{{route('cv')}}">Cv</a></li>
         </ul>
-        <x-logo class="absolute top-3 left-3"/>
+    <div class="absolute top-3 left-3">
+
+        <div x-data="{check:false,seperate:false}" class="relative">
+            <x-logo  @mouseenter="check= true" @mouseleave="check=false"
+            />
+            <div x-cloak x-show="check && !seperate" x-transition.duration.500ms class="text-sm w-45 bg-granite-300 p-2 border-2 border-black dark:border-white absolute -bottom-10">
+                <p>Want to see my skills?</p>
+            </div>
+        </div>
+    </div>
 
 </nav>

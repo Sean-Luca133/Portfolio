@@ -1,19 +1,19 @@
 <x-layouts.portfolio title="Welcome to my portfolio">
 
     {{-- Opening box--}}
-    <div class="grid grid-cols-7 border-2 border-black rounded-lg bg-lime-cream-100 overflow-hidden mb-6 hover:outline-2 hover:outline-sandy-brown-300 transition duration-200">
+    <div class="grid grid-cols-7 border-2 border-black rounded-lg bg-light-green-100 overflow-hidden mb-6 hover:outline-2 hover:outline-sandy-brown-300 transition duration-200">
 
-        <div class="lg:col-span-2 col-span-7 border-b-2 lg:border-b-0 lg:border-r-2 border-black bg-lime-cream-200 flex flex-col items-center justify-center gap-4 p-8">
+        <div class="lg:col-span-2 col-span-7 border-b-2 lg:border-b-0 lg:border-r-2 border-black bg-light-green-200 flex flex-col items-center justify-center gap-4 p-8">
 
             <div x-cloak class="relative" x-data="{show_stripe:false}">
                 <img x-show="show_stripe" x-transition.duration.500ms src="/storage/click_small.png"
-                       class="absolute size-20 rotate-45 -top-10 left-23"
+                       class="absolute size-20 rotate-45 -top-10 left-35"
                        alt="stripe_effect">
                 <img x-show="show_stripe" x-transition.duration.500ms src="/storage/click_small.png"
                      class="absolute size-20 -rotate-45 -top-10 -left-7"
                      alt="stripe_effect">
 
-                <div class="size-36 rounded-full border-2 border-black overflow-hidden bg-granite-800">
+                <div class="size-48 rounded-full border-2 border-black overflow-hidden bg-granite-800">
                     <figure class="col-span-2 flex justify-center items-center">
                         <div class="relative bg-black/50" @mouseenter="show_stripe=true"
                              @mouseleave="show_stripe=false">
@@ -24,30 +24,22 @@
                                 class="inset-0 absolute rounded-full border-black border-2 bg-[linear-gradient(45deg,transparent_25%,rgba(222,222,222,.3)_50%,rgba(222,222,222,.8)_75%,transparent_25%,transparent_100%)] overflow-hidden bg-size-[400%_100%,100%_100%] bg-position-[200%_0,0_0] bg-no-repeat  hover:transition-[background-position_0s_ease] hover:bg-position-[-100%_0,0_0] hover:duration-2000">
                             </div>
                             <img
-                                src="/storage/placeholder.png" alt="Start_image"/></div>
+                                src="/storage/intro_image.jpg" alt="Start_image"/></div>
 
                     </figure>
                 </div>
             </div>
-            <div class="flex gap-1 flex-wrap justify-center">
-                @foreach(['Laravel','PHP','Alpine.js','Tailwind'] as $tech)
-                    <span class="text-[9px] font-bold px-2 py-0.5 bg-black text-lime-cream-100 rounded-sm font-main tracking-wide">{{ $tech }}</span>
-                @endforeach
-            </div>
+
         </div>
 
         <div class="col-span-5 p-8 flex flex-col justify-center gap-4">
-            <p class="text-[10px] font-bold font-main tracking-[0.14em] text-lime-cream-700 uppercase">// welkom</p>
-            <h2 class="font-header text-3xl leading-tight text-black">Hey, I'm<br>Sean-Luca Jansen.</h2>
+            <p class="font-bold font-main text-lime-cream-700 uppercase">// welkom</p>
+            <h2 class="font-header text-3xl text-black">Hey, I'm<br>Sean-Luca Jansen.</h2>
             <p class="text-xs font-main text-granite-800">
                 I'm a developer who builds clean, thoughtful web applications.
                 I love turning ideas into real, working products — from solid backend logic to polished frontends.<br><br>
                 Have a look around and see what I've been up to.
             </p>
-            <div class="flex gap-3 flex-wrap">
-                <a href="{{ route('projects') }}" class="font-main text-[11px] font-bold px-5 py-2 bg-black text-lime-cream-100 border-2 border-black rounded hover:bg-dusty-olive-700 transition">explore_projects →</a>
-                <a href="{{ route('about_me') }}" class="font-main text-[11px] font-bold px-5 py-2 bg-transparent text-black border-2 border-black rounded hover:bg-lime-cream-200 transition">about_me</a>
-            </div>
         </div>
     </div>
 
@@ -58,7 +50,7 @@
     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 my-8">
 
         <x-intro_card title="About me" description="Who I am, where I come from, and what drives me to keep building things." route="about_me" bg_color="bg-sandy-brown-100" footer_color="bg-sandy-brown-200 hover:bg-sandy-brown-300" label="GET TO KNOW ME"/>
-        <x-intro_card title="Projects" description="A collection of things I've built — side projects, experiments and real work." route="projects" bg_color="bg-light-green-100" footer_color="bg-light-green-200 hover:bg-light-green-300" label="SEE MY WORK"/>
+        <x-intro_card title="Projects" description="A collection of things I've built — side projects, experiments and real work." route="projects" bg_color="bg-lime-cream-100" footer_color="bg-lime-cream-200 hover:bg-lime-cream-300" label="SEE MY WORK"/>
         <x-intro_card title="Cv" description="My education, experience, and skills — the full picture in one place." route="cv" bg_color="bg-granite-100" footer_color="bg-granite-200 hover:bg-granite-300" label="VIEW CV"/>
 
     </div>
