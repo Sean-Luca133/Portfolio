@@ -25,7 +25,8 @@
     font-weight: normal;
     font-style: normal;
 }
-
+/* define x-cloak for it to work correctly*/
+[x-cloak] { display: none !important; }
 
 @theme {
     --font-sans: 'garet', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';

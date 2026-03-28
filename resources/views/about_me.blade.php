@@ -9,75 +9,89 @@
             dicta ducimus enim eos est fugiat illum incidunt inventore maiores maxime minima modi necessitatibus nemo neque
             nobis odit praesentium quam rem rerum suscipit ullam veniam voluptatum.</p></x-slot:top>
 
-    <h2 class="font-header text-2xl">Brief introduction</h2>
-        <x-content_box>
-            <h1>Test</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at cupiditate facilis hic illum
-                laudantium, nesciunt quod veniam voluptas voluptate. Accusamus consequatur exercitationem incidunt iusto
-                laborum
-                molestias nostrum officiis perferendis? Atque consectetur eligendi hic nemo perspiciatis quo reiciendis,
-                reprehenderit! Accusamus aliquam aliquid architecto at consequatur cum delectus distinctio enim
-                exercitationem
-                fuga fugit, itaque magnam modi nisi, possimus quam quas quo recusandae reiciendis repudiandae sit
-                tenetur
-                voluptates? A animi architecto aspernatur delectus deserunt dolore earum error eum excepturi
-                exercitationem
-                expedita illum in incidunt maiores nostrum nulla, optio perspiciatis quam qui sit tempora unde
-                voluptate? Ab
-                eius laborum nemo quod repudiandae voluptates!</p>
-        </x-content_box>
+    {{--overflow-x-clip used to not make cards extend the browser viewport when not activated yet--}}
+    <div class="overflow-x-clip">
+        <div class="my-10"><h2 class="font-header text-2xl">Brief introduction</h2>
+            <x-content_box image="placeholder.png">
+                <h1>Test</h1>
 
-    <h2 class="font-header text-2xl">Why applied computer science?</h2>
-        <x-content_box reverse><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at cupiditate
-                facilis hic illum
-                laudantium, nesciunt quod veniam voluptas voluptate. Accusamus consequatur exercitationem incidunt iusto
-                laborum
-                molestias nostrum officiis perferendis? Atque consectetur eligendi hic nemo perspiciatis quo reiciendis,
-                reprehenderit! Accusamus aliquam aliquid architecto at consequatur cum delectus distinctio enim
-                exercitationem
-                fuga fugit, itaque magnam modi nisi, possimus quam quas quo recusandae reiciendis repudiandae sit
-                tenetur
-                voluptates? A animi architecto aspernatur delectus deserunt dolore earum error eum excepturi
-                exercitationem
-                expedita illum in incidunt maiores nostrum nulla, optio perspiciatis quam qui sit tempora unde
-                voluptate? Ab
-                eius laborum nemo quod repudiandae voluptates!</p>
-        </x-content_box>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at cupiditate facilis hic illum
+                    laudantium, nesciunt quod veniam voluptas voluptate. Accusamus consequatur exercitationem incidunt
+                    iusto
+                    laborum
+                    molestias nostrum officiis perferendis? Atque consectetur eligendi hic nemo perspiciatis quo
+                    reiciendis,
+                    reprehenderit! Accusamus aliquam aliquid architecto at consequatur cum delectus distinctio enim
+                    exercitationem
+                    fuga fugit, itaque magnam modi nisi, possimus quam quas quo recusandae reiciendis repudiandae sit
+                    tenetur
+                    voluptates? A animi architecto aspernatur delectus deserunt dolore earum error eum excepturi
+                    exercitationem
+                    expedita illum in incidunt maiores nostrum nulla, optio perspiciatis quam qui sit tempora unde
+                    voluptate? Ab
+                    eius laborum nemo quod repudiandae voluptates!</p>
+            </x-content_box>
+        </div>
 
-        <h2 class="font-header text-2xl">Some interresting facts about me</h2>
+        <div class="my-10"><h2 class="font-header text-2xl">Why applied computer science?</h2>
+            <x-content_box reverse image="placeholder.png"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquam at cupiditate
+                    facilis hic illum
+                    laudantium, nesciunt quod veniam voluptas voluptate. Accusamus consequatur exercitationem incidunt
+                    iusto
+                    laborum
+                    molestias nostrum officiis perferendis? Atque consectetur eligendi hic nemo perspiciatis quo
+                    reiciendis,
+                    reprehenderit! Accusamus aliquam aliquid architecto at consequatur cum delectus distinctio enim
+                    exercitationem
+                    fuga fugit, itaque magnam modi nisi, possimus quam quas quo recusandae reiciendis repudiandae sit
+                    tenetur
+                    voluptates? A animi architecto aspernatur delectus deserunt dolore earum error eum excepturi
+                    exercitationem
+                    expedita illum in incidunt maiores nostrum nulla, optio perspiciatis quam qui sit tempora unde
+                    voluptate? Ab
+                    eius laborum nemo quod repudiandae voluptates!</p>
+            </x-content_box>
+        </div>
 
-        @php
-            $side_images = [
-                [
-                    'src' => 'placeholder.png',
-                    'alt' => 'side_image',
-                    'bottom' => '0',
-                    'left' => '0'
-                ],
-                [
-                    'src' => 'placeholder.png',
-                    'alt' => 'side_image',
-                    'bottom' => '0',
-                    'left' => '10'
-                ]
-                ];
-        @endphp
-        <x-content_box :side_images="$side_images">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at cupiditate facilis hic illum
-                laudantium, nesciunt quod veniam voluptas voluptate. Accusamus consequatur exercitationem incidunt iusto
-                laborum
-                molestias nostrum officiis perferendis? Atque consectetur eligendi hic nemo perspiciatis quo reiciendis,
-                reprehenderit! Accusamus aliquam aliquid architecto at consequatur cum delectus distinctio enim
-                exercitationem
-                fuga fugit, itaque magnam modi nisi, possimus quam quas quo recusandae reiciendis repudiandae sit
-                tenetur
-                voluptates? A animi architecto aspernatur delectus deserunt dolore earum error eum excepturi
-                exercitationem
-                expedita illum in incidunt maiores nostrum nulla, optio perspiciatis quam qui sit tempora unde
-                voluptate? Ab
-                eius laborum nemo quod repudiandae voluptates!</p>
-        </x-content_box>
+        <div class="my-10"><h2 class="font-header text-2xl">Some interresting facts about me</h2>
+
+            @php
+                $side_images = [
+                    [
+                        'src' => 'placeholder.png',
+                        'alt' => 'side_image',
+                        'bottom' => '0',
+                        'left' => '0'
+                    ],
+                    [
+                        'src' => 'placeholder.png',
+                        'alt' => 'side_image',
+                        'bottom' => '0',
+                        'left' => '10'
+                    ]
+                    ];
+            @endphp
+            <x-content_box :side_images="$side_images" image="placeholder.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at cupiditate facilis hic illum
+                    laudantium, nesciunt quod veniam voluptas voluptate. Accusamus consequatur exercitationem incidunt
+                    iusto
+                    laborum
+                    molestias nostrum officiis perferendis? Atque consectetur eligendi hic nemo perspiciatis quo
+                    reiciendis,
+                    reprehenderit! Accusamus aliquam aliquid architecto at consequatur cum delectus distinctio enim
+                    exercitationem
+                    fuga fugit, itaque magnam modi nisi, possimus quam quas quo recusandae reiciendis repudiandae sit
+                    tenetur
+                    voluptates? A animi architecto aspernatur delectus deserunt dolore earum error eum excepturi
+                    exercitationem
+                    expedita illum in incidunt maiores nostrum nulla, optio perspiciatis quam qui sit tempora unde
+                    voluptate? Ab
+                    eius laborum nemo quod repudiandae voluptates!</p>
+            </x-content_box>
+        </div>
+    </div>
 
 
 </x-layouts.portfolio>
