@@ -60,13 +60,13 @@
             @php
                 $side_images = [
                     [
-                        'src' => 'placeholder.png',
+                        'src' => 'ralsei.png',
                         'alt' => 'side_image',
                         'bottom' => '0',
-                        'left' => '0'
+                        'left' => '3'
                     ],
                     [
-                        'src' => 'placeholder.png',
+                        'src' => 'crustle.png',
                         'alt' => 'side_image',
                         'bottom' => '0',
                         'left' => '10'
