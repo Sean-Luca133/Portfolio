@@ -6,7 +6,7 @@ $current = basename($_SERVER['REQUEST_URI']);
 
 @endphp
 
-<nav class="z-10 h-28 bg-granite-600 relative  sticky top-0 border-b-2 border-black dark:border-white mb-5">
+<nav class="z-10 h-28 bg-granite-600 relative  sticky top-0 border-b-2 border-black dark:border-white">
 
         <ul class=" flex justify-center absolute -bottom-5 left-2 [&_li]:text-sm [&_li]:md:text-base [&_li]:p-2 [&_li]:font-bold [&_li]:font-header [&_li]:bg-dusty-olive-300 [&_li]:border-y-2 [&_li]:border-black dark:[&_li]:border-white ">
             <li class="{{$current == ''? '!bg-orange-300':''}} rounded-s border-s-2"><a href="{{route('home')}}" >Welkom</a></li>
