@@ -3,7 +3,7 @@
     {{-- Opening box--}}
     <x-slot:top>
         <div
-            class="mx-5 grid grid-cols-7 border-2 border-black rounded-lg bg-light-green-100 overflow-hidden mb-6 hover:outline-2 hover:outline-sandy-brown-300 transition duration-200">
+            class="md:mx-5 mx-2 grid grid-cols-7 border-2 border-black rounded-lg bg-light-green-100 overflow-hidden mb-6 hover:outline-2 hover:outline-sandy-brown-300 transition duration-200">
 
             <div
                 class="lg:col-span-2 col-span-7 border-b-2 lg:border-b-0 lg:border-r-2 border-black bg-light-green-200 flex flex-col items-center justify-center gap-4 p-8">
@@ -35,28 +35,44 @@
 
             </div>
 
-            <div class="col-span-5 p-8 flex flex-col justify-center gap-4">
-                <p class="font-bold font-main text-lime-cream-700 uppercase">// welkom</p>
-                <h2 class="font-header text-3xl text-black">Hi, and welcome to my<br/><span class="hover:text-sandy-brown-300 transition duration-200">Portfolio </span></h2>
-                <p class="text-xs font-main text-granite-800">
-                    I'm a developer who builds clean, thoughtful web applications.
-                    I love turning ideas into real, working products — from solid backend logic to polished
-                    frontends.<br><br>
-                    Have a look around and see what I've been up to.
-                </p>
+            <div class="lg:col-span-5 col-span-7 p-8 flex flex-col justify-center gap-4">
+                <h2 class="font-header text-3xl text-black">Hi, and welcome to my<br/><span
+                        class="hover:text-sandy-brown-300 transition duration-200">Portfolio </span></h2>
+                <p class="text-sm font-main text-granite-800">
+                    This is my online website used as a portfolio. It contains all what you need to know about me. From
+                    how I really like to look at small details of layouts or functionality of an application, to my
+                    current skills which are still improving to this day. So, if you need someone who enjoys looking at
+                    the detials and wants a end result to be better than good, then you have landed on the right
+                    URL.</p>
+                <p  class="text-sm font-main text-granite-800">To be more specific, You can find (even more) information about me on the <b>About me</b> page. If you're interested in my projects you should checkout the <b>Projects</b> page. Lastly if in need for a fast overview of my education/skills take a look at the <b>Cv</b> page.</p>
+                <p  class="text-sm font-main text-granite-800">So, have a look around and see what you might find.</p>
+
             </div>
         </div>
     </x-slot:top>
 
     {{-- Explore label --}}
-    <p class="text-lg font-main  text-dusty-olive-500 uppercase mb-3">Where to Explore?</p>
+    <p class="text-lg font-main  text-dusty-olive-500 uppercase mb-3">Where to Explore to?</p>
 
     {{-- Intro cards --}}
     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 my-8">
 
-        <x-intro_card title="About me" description="Who I am, where I come from, and what drives me to keep building things." route="about_me" bg_color="bg-sandy-brown-100" footer_color="bg-sandy-brown-200 hover:bg-sandy-brown-300" label="GET TO KNOW ME"/>
-        <x-intro_card title="Projects" description="A collection of things I've built — side projects, experiments and real work." route="projects" bg_color="bg-lime-cream-100" footer_color="bg-lime-cream-200 hover:bg-lime-cream-300" label="SEE MY WORK"/>
-        <x-intro_card title="Cv" description="My education, experience, and skills — the full picture in one place." route="cv" bg_color="bg-granite-100" footer_color="bg-granite-200 hover:bg-granite-300" label="VIEW CV"/>
+        <x-intro_card title="About me"
+
+                      route="about_me" bg_color="bg-sandy-brown-100"
+                      footer_color="bg-sandy-brown-200 hover:bg-sandy-brown-300" label="GET TO KNOW ME">
+            If you want to know me better this is a great place to start. A little bit of background ing-formation is always nice to have.
+        </x-intro_card>
+        <x-intro_card title="Projects"
+                      route="projects" bg_color="bg-lime-cream-100"
+                      footer_color="bg-lime-cream-200 hover:bg-lime-cream-300" label="SEE MY PROJECTS">
+            Interested in what I have already made and am currently working on? This page gives you a selection of some projects I have worked on.
+        </x-intro_card>
+        <x-intro_card class="lg:col-span-1 md:col-span-2" title="Cv"
+                      route="cv" bg_color="bg-granite-100" footer_color="bg-granite-200 hover:bg-granite-300"
+                      label="VIEW CV">
+            In a rush to see my skills and education? Take a look at this page where my cv is shown on full display.
+        </x-intro_card>
 
     </div>
 

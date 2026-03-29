@@ -62,13 +62,13 @@
                     [
                         'src' => 'ralsei.png',
                         'alt' => 'side_image',
-                        'bottom' => '0',
-                        'left' => '3'
+                        'bottom' => '2',
+                        'left' => '0'
                     ],
                     [
                         'src' => 'crustle.png',
                         'alt' => 'side_image',
-                        'bottom' => '0',
+                        'bottom' => '2',
                         'left' => '10'
                     ]
                     ];

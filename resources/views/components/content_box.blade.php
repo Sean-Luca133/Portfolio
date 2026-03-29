@@ -19,7 +19,7 @@
                  alt="project">
             <div> @foreach($side_images as $side_image)
                     <img
-                        class="h-15 opacity-0 hover:opacity-50 absolute bottom-{{$side_image['bottom']??''}} left-{{$side_image['left']??''}} top-{{$side_image['top']??''}} right-{{$side_image['right']??''}} transition-opacity duration-200 delay-1000"
+                        class="h-15 opacity-0 hover:opacity-50 absolute bottom-{{$side_image['bottom']??''}} left-{{$side_image['left']??500}} transition-opacity duration-200 delay-1000"
                         src="/storage/{{$side_image['src']}}" alt="{{$side_image['alt']}}">
                 @endforeach</div>
         </figure>

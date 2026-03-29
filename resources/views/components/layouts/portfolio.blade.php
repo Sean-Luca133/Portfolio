@@ -18,10 +18,10 @@
 <body class="bg-dusty-olive-50 relative">
 <x-navbar/>
 <div class="bg-granite-100 py-5 mb-5 border-b-1 border-black dark:border-white">
-<h1 class="text-6xl text-center font-header my-12">{{$title?? ''}}</h1>
+<h1 class="md:text-6xl text-5xl text-center font-header my-12">{{$title?? ''}}</h1>
 {{$top??''}}
 </div>
-<div class="mx-5">
+<div class="md:mx-5 mx-2">
 {{$slot}}
 </div>
 <x-footer/>
