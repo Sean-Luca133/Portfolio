@@ -1,13 +1,17 @@
 <x-layouts.portfolio title="Who am I?">
-    <x-slot:top><p class="my-5 mx-auto max-w-[65%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsa iste obcaecati perferendis qui! Dolorum
-            excepturi
-            inventore itaque nihil nostrum tenetur unde! A alias aliquid, aperiam asperiores assumenda debitis delectus
-            deleniti
-            deserunt dolore est fugit odit officia omnis perferendis possimus provident, quia reiciendis reprehenderit,
-            repudiandae sunt suscipit tempore voluptatem? Ducimus excepturi in magni sunt ullam! Aut, enim ipsam laudantium
-            magnam possimus rem sed sequi. Accusantium aliquam aliquid amet animi, architecto aspernatur at corporis cumque
-            dicta ducimus enim eos est fugiat illum incidunt inventore maiores maxime minima modi necessitatibus nemo neque
-            nobis odit praesentium quam rem rerum suscipit ullam veniam voluptatum.</p></x-slot:top>
+    <x-slot:top><div class="my-5 mx-auto md:max-w-[65%] max-w-[90%] grid grid-cols-5 gap-4">
+            <p class="md:col-span-3 col-span-5 self-center md:text-base text-sm">
+                Hi again, on this page I am going to give you a more detailed look at who I am and why I chose this
+                field of
+                study in the first place. It will even include some tidbits about myself which will hopefully give a
+                better
+                about who I am as a person. So, if you are interested keep on reading.
+            </p>
+            <figure class="md:col-span-2 col-span-5 flex justify-center">
+            <img  src="/storage/placeholder.png" alt="About me image">
+            </figure>
+        </div>
+    </x-slot:top>
 
 
     {{--overflow-x-clip used to not make cards extend the browser viewport when not activated yet--}}
@@ -62,14 +66,14 @@
                     [
                         'src' => 'ralsei.png',
                         'alt' => 'side_image',
-                        'bottom' => '2',
-                        'left' => '0'
+                        'bottom' => '0',
+                        'left' => '10'
                     ],
                     [
                         'src' => 'crustle.png',
                         'alt' => 'side_image',
-                        'bottom' => '2',
-                        'left' => '10'
+                        'bottom' => '0',
+                        'left' => '75'
                     ]
                     ];
             @endphp

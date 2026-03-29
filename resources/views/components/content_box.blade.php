@@ -6,6 +6,15 @@
 @php
     $reverse_prop = $reverse == null? '': 'order-first';
 
+
+    if($side_images != []){
+    $side_images_positions =[];
+
+    foreach($side_images as $side_image){
+    $side_image_position =  "bottom-". $side_image['bottom'] ." left-" . $side_image['left'];
+    $side_images_positions[] = $side_image_position;
+    }
+    }
 @endphp
 
 {{-- how does the slide animation work? define alpine variable that decides if the card is put into view. Then define intersect (first needs to be installed + in app.js initialized on element which toggles the variable (.once for only on time trigger). To make the sliding happen translate-x is used on a conditional class--}}
@@ -17,9 +26,9 @@
         <figure class="relative flex justify-center items-center md:col-span-2 col-span-7">
             <img class="size-50 rounded-lg" src="/storage/{{$image}}"
                  alt="project">
-            <div> @foreach($side_images as $side_image)
+            <div> @foreach($side_images as $index => $side_image)
                     <img
-                        class="h-15 opacity-0 hover:opacity-50 absolute bottom-{{$side_image['bottom']??''}} left-{{$side_image['left']??500}} transition-opacity duration-200 delay-1000"
+                        class="h-15 opacity-0 hover:opacity-50 absolute {{$side_images_positions[$index]}} transition-opacity duration-200 delay-1000"
                         src="/storage/{{$side_image['src']}}" alt="{{$side_image['alt']}}">
                 @endforeach</div>
         </figure>
