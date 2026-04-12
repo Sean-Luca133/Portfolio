@@ -16,7 +16,7 @@ $current = basename($_SERVER['REQUEST_URI']);
         </ul>
     <div class="absolute top-3 left-3">
 
-        <div x-cloak x-data="{check:false,seperate:false}" class="relative">
+        <div x-data="{check:false,seperate:false}" class="relative">
             <x-logo  @mouseenter="check= true" @mouseleave="check=false"
             />
             <div x-cloak x-show="check && !seperate" x-transition.duration.500ms class="rounded-lg text-sm w-45 bg-granite-300 p-2 border-2 border-black dark:border-white absolute -bottom-10">

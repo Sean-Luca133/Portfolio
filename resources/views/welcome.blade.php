@@ -39,13 +39,18 @@
                 <h2 class="font-header text-3xl text-black">Hi, and welcome to my<br/><span
                         class="hover:text-sandy-brown-300 transition duration-200">Portfolio </span></h2>
                 <p class="text-sm font-main text-granite-800">
-                    This is my online website used as a portfolio. It contains all what you need to know about me. From
-                    how I really like to look at small details of layouts or functionality of an application, to my
-                    current skills which are still improving to this day. So, if you need someone who enjoys looking at
-                    the detials and wants a end result to be better than good, then you have landed on the right
-                    URL.</p>
-                <p  class="text-sm font-main text-granite-800">To be more specific, You can find (even more) information about me on the <b>About me</b> page. If you're interested in my projects you should checkout the <b>Projects</b> page. Lastly if in need for a fast overview of my education/skills take a look at the <b>Cv</b> page.</p>
-                <p  class="text-sm font-main text-granite-800">So, have a look around and see what you might find.</p>
+                    This is my online website used as a portfolio. It contains all that you need to know about me. From
+                    how I really like to look at the small details of layouts or functionality of an application, to my
+                    current skills, which are still improving to this day. So, if you need someone who enjoys looking at
+                    The details and wants an end result to be better than good, then you have landed on the right
+                    URL.
+                </p>
+                <p class="text-sm font-main text-granite-800">To be more specific, you can find (even more) information
+                    about me on the <b>About me</b> page. If you're interested in my projects, you should check out the
+                    <b>Projects</b> page. Lastly, if in need of a fast overview of my education/skills, take a look at
+                    the <b>Cv</b> page.
+                </p>
+                <p class="text-sm font-main text-granite-800">So, have a look around and see what you might find.</p>
 
             </div>
         </div>
@@ -61,17 +66,19 @@
 
                       route="about_me" bg_color="bg-sandy-brown-100"
                       footer_color="bg-sandy-brown-200 hover:bg-sandy-brown-300" label="GET TO KNOW ME">
-            If you want to know me better this is a great place to start. A little bit of background ing-formation is always nice to have.
+            If you want to know me better, this is a great place to start. A little bit of background information is
+            always nice to have.
         </x-intro_card>
         <x-intro_card title="Projects"
                       route="projects" bg_color="bg-lime-cream-100"
                       footer_color="bg-lime-cream-200 hover:bg-lime-cream-300" label="SEE MY PROJECTS">
-            Interested in what I have already made and am currently working on? This page gives you a selection of some projects I have worked on.
+            Interested in what I have already made and am currently working on? This page gives you a selection of some
+            projects I have worked on.
         </x-intro_card>
         <x-intro_card class="lg:col-span-1 md:col-span-2" title="Cv"
                       route="cv" bg_color="bg-granite-100" footer_color="bg-granite-200 hover:bg-granite-300"
                       label="VIEW CV">
-            In a rush to see my skills and education? Take a look at this page where my cv is shown on full display.
+            In a rush to see my skills and education? Take a look at this page where my CV is shown on full display.
         </x-intro_card>
 
     </div>
