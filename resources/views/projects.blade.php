@@ -31,13 +31,14 @@
                 <x-select_screen_button selected_project="3" image="deltafan_logo.png" name="Delta fan"/>
                 <x-select_screen_button selected_project="4"/>
                 <x-select_screen_button selected_project="5" image="pokelab_logo.png" name="Pokélab"/>
-                <x-select_screen_button selected_project="6" image="accurate_pokedex.png" name="accurate* pokedex"/>
+                <x-select_screen_button selected_project="6" image="accurate_pokedex.png" name="Accurate* pokedex"/>
             </div>
             {{-- detail menu --}}
             <div class="col-start-1 row-start-1" x-show="selected_project!=0" x-transition.duration.500ms x-transition.delay.500ms>
                 <div class="relative">
                 <div class="absolute top-1 right-1 cursor-pointer" @click="selected_project=0"><i class="fa-solid fa-x"></i></div>
-                <x-detail_menu>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam blanditiis
+                <x-detail_menu show_number="1"><x-slot:summary>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam blanditiis
                     consequuntur enim fuga in laboriosam nesciunt, nobis nostrum obcaecati, omnis recusandae temporibus
                     voluptatum. Culpa cupiditate, fugiat impedit quidem rem tempore ut veniam voluptates? Aliquid aut
                     consectetur cumque deserunt eos excepturi facilis, fuga in incidunt ipsam ipsum itaque, iusto
@@ -51,13 +52,14 @@
                     ratione sequi similique. Accusamus aspernatur at dolorem et excepturi in ipsum perspiciatis
                     possimus, saepe! Consequuntur eum illo nesciunt officia repudiandae tempore ullam. Architecto autem,
                     consectetur explicabo incidunt maxime nemo voluptatem voluptatum! Culpa delectus earum enim! Eius
-                    explicabo fugiat magnam magni non, perspiciatis quaerat, quis quisquam quod sapiente veniam
+                    explicabo fugiat magnam magni non, perspiciatis quaerat,</x-slot:summary>
+                    <x-slot:learned> quis quisquam quod sapiente veniam
                     voluptates. Distinctio dolorem earum eligendi laboriosam nam, non repellendus veritatis! A, amet
                     culpa deserunt dignissimos distinctio dolore dolores excepturi fugiat, harum in ipsa ipsum
-                    laudantium magnam maxime obcaecati quam quasi quibusdam quisquam saepe unde. Accusamus alias
+                        laudantium magnam maxime obcaecati quam quasi quibusdam quisquam saepe unde. </x-slot:learned> <x-slot:contributers> Accusamus alias
                     consequuntur doloribus, iusto laboriosam, nisi, obcaecati qui quo quod sunt tempore temporibus
                     voluptas voluptatum. Aperiam culpa dicta eius itaque nostrum officiis omnis quia quos veritatis?
-                    Incidunt iure nihil obcaecati sapiente voluptas.
+                    Incidunt iure nihil obcaecati sapiente voluptas.</x-slot:contributers>
                 </x-detail_menu>
                 </div>
             </div>
