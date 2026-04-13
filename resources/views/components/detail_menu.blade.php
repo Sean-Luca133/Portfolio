@@ -14,11 +14,10 @@
                                                      src="/storage/projects/{{$image}}"
                                                      alt="detail project view image"></a>
         </figure>
-        <div class="md:col-span-5 col-span-7 flex flex-col">
-            <p><span class="font-bold">Summary:</span>{{$summary}}</p>
-            <p><span class="font-bold">What I learned:</span>{{$learned}}</p>
-            <p><span class="font-bold">Who contributed?:</span>{{$contributers}}</p>
-            </p>
+        <div class="md:col-span-5 col-span-7 flex flex-col mt-5">
+            <p><span class="font-bold">Summary: </span>{{$summary}}</p>
+            <p><span class="font-bold">What I learned: </span>{{$learned}}</p>
+            <p><span class="font-bold">Who contributed?: </span>{{$contributers}}</p>
         </div>
     </div>
 </div>

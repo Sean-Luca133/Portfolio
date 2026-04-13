@@ -27,7 +27,7 @@
                  class="col-start-1 row-start-1 grid grid-cols-3 justify-center"
             >
                 <x-select_screen_button selected_project="1" image="poutrel_logo.png" name="Poutrel"/>
-                <x-select_screen_button selected_project="2" image="cycling_wattage.png" name="Cycling data science"/>
+                <x-select_screen_button selected_project="2" image="kvv_rauw.png" name="Kvv Rauw sport mol"/>
                 <x-select_screen_button selected_project="3" image="deltafan_logo.png" name="Delta fan"/>
                 <x-select_screen_button selected_project="4"/>
                 <x-select_screen_button selected_project="5" image="pokelab_logo.png" name="Pokélab"/>
@@ -37,30 +37,37 @@
             <div class="col-start-1 row-start-1" x-show="selected_project!=0" x-transition.duration.500ms x-transition.delay.500ms>
                 <div class="relative">
                 <div class="absolute top-1 right-1 cursor-pointer" @click="selected_project=0"><i class="fa-solid fa-x"></i></div>
-                <x-detail_menu show_number="1"><x-slot:summary>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam blanditiis
-                    consequuntur enim fuga in laboriosam nesciunt, nobis nostrum obcaecati, omnis recusandae temporibus
-                    voluptatum. Culpa cupiditate, fugiat impedit quidem rem tempore ut veniam voluptates? Aliquid aut
-                    consectetur cumque deserunt eos excepturi facilis, fuga in incidunt ipsam ipsum itaque, iusto
-                    maiores minus modi molestias neque quisquam quo repellendus reprehenderit similique tempore vel
-                    voluptatem. Eos esse explicabo, magnam maiores tempora ut veniam! Assumenda aut blanditiis dolor ex,
-                    facilis fuga incidunt iusto, maiores maxime minima, minus mollitia non nostrum odit officia
-                    quibusdam reprehenderit vero vitae voluptas voluptatibus! Adipisci aliquid aperiam architecto cumque
-                    deleniti deserunt dicta fuga fugiat harum inventore magnam molestiae nemo nihil officiis perferendis
-                    praesentium quaerat quidem rem veritatis, voluptatibus? Animi consequatur laborum molestias
-                    recusandae voluptate. Architecto dicta et impedit saepe soluta? Deleniti ducimus ea eligendi illo
-                    ratione sequi similique. Accusamus aspernatur at dolorem et excepturi in ipsum perspiciatis
-                    possimus, saepe! Consequuntur eum illo nesciunt officia repudiandae tempore ullam. Architecto autem,
-                    consectetur explicabo incidunt maxime nemo voluptatem voluptatum! Culpa delectus earum enim! Eius
-                    explicabo fugiat magnam magni non, perspiciatis quaerat,</x-slot:summary>
-                    <x-slot:learned> quis quisquam quod sapiente veniam
-                    voluptates. Distinctio dolorem earum eligendi laboriosam nam, non repellendus veritatis! A, amet
-                    culpa deserunt dignissimos distinctio dolore dolores excepturi fugiat, harum in ipsa ipsum
-                        laudantium magnam maxime obcaecati quam quasi quibusdam quisquam saepe unde. </x-slot:learned> <x-slot:contributers> Accusamus alias
-                    consequuntur doloribus, iusto laboriosam, nisi, obcaecati qui quo quod sunt tempore temporibus
-                    voluptas voluptatum. Aperiam culpa dicta eius itaque nostrum officiis omnis quia quos veritatis?
-                    Incidunt iure nihil obcaecati sapiente voluptas.</x-slot:contributers>
+
+                    <x-detail_menu show_number="1" image="poutrel_view.png"><x-slot:summary>
+                   Een opdracht te maken voor Skil2</x-slot:summary>
+                    <x-slot:learned>In groep werken via Jira. Php,... </x-slot:learned> <x-slot:contributers> Maarten,Quinte,Andreas, Sean-Luca</x-slot:contributers>
                 </x-detail_menu>
+
+                    <x-detail_menu show_number="2" image="poutrel_view.png"><x-slot:summary>
+                            Een opdracht te maken voor Skil2</x-slot:summary>
+                        <x-slot:learned>In groep werken via Jira. Php,... </x-slot:learned> <x-slot:contributers> Maarten,Quinte,Andreas, Sean-Luca</x-slot:contributers>
+                    </x-detail_menu>
+
+                    <x-detail_menu show_number="3" image="poutrel_view.png"><x-slot:summary>
+                            Een opdracht te maken voor Skil2</x-slot:summary>
+                        <x-slot:learned>In groep werken via Jira. Php,... </x-slot:learned> <x-slot:contributers> Maarten,Quinte,Andreas, Sean-Luca</x-slot:contributers>
+                    </x-detail_menu>
+
+                    <x-detail_menu show_number="4" image="poutrel_view.png"><x-slot:summary>
+                            Een opdracht te maken voor Skil2</x-slot:summary>
+                        <x-slot:learned>In groep werken via Jira. Php,... </x-slot:learned> <x-slot:contributers> Maarten,Quinte,Andreas, Sean-Luca</x-slot:contributers>
+                    </x-detail_menu>
+
+                    <x-detail_menu show_number="5" image="poutrel_view.png"><x-slot:summary>
+                            Een opdracht te maken voor Skil2</x-slot:summary>
+                        <x-slot:learned>In groep werken via Jira. Php,... </x-slot:learned> <x-slot:contributers> Maarten,Quinte,Andreas, Sean-Luca</x-slot:contributers>
+                    </x-detail_menu>
+
+                    <x-detail_menu show_number="6" image="poutrel_view.png"><x-slot:summary>
+                            Een opdracht te maken voor Skil2</x-slot:summary>
+                        <x-slot:learned>In groep werken via Jira. Php,... </x-slot:learned> <x-slot:contributers> Maarten,Quinte,Andreas, Sean-Luca</x-slot:contributers>
+                    </x-detail_menu>
+
                 </div>
             </div>
         </div>
