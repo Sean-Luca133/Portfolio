@@ -13,11 +13,11 @@
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet"/>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+    @stack('styles')
 </head>
 <body class="bg-dusty-olive-50 relative">
 <x-navbar/>
-<div class="bg-granite-100 py-5 mb-5 border-b-1 border-black dark:border-white">
+<div class="bg-granite-100 py-5 mb-5 border-b border-black dark:border-white">
 <h1 class="md:text-6xl text-5xl text-center font-header my-12">{{$title?? ''}}</h1>
 {{$top??''}}
 </div>
