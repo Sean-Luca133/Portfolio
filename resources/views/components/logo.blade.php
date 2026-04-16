@@ -1,6 +1,6 @@
 <div
     @php
-$skills = ['HTML', 'CSS','JavaScript','PHP', 'Laravel', 'Tailwind', 'Alpine.js', 'Git', 'MySQL', 'Python', 'Java', '.NET', 'React','Qlik'];
+$skills = ['HTML', 'CSS','JavaScript','PHP', 'Laravel', 'Tailwind', 'Alpine.js','Livewire', 'StarUML', 'Git', 'MySQL', 'Python', 'Java', '.NET', 'React','Qlik'];
 $colors = ['bg-sandy-brown-400','bg-light-green-400'];
  @endphp
 
