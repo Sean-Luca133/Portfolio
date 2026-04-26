@@ -100,12 +100,12 @@
     --font-main: 'garet',sans-serif;
 
     /* define custom animation */
-    --animate-marquee: marquee 25s linear infinite;
+    --animate-marquee: marquee 35s linear infinite;
 
     /* define key frames for animation => transitions it must have done when it reach the % point of the animation (it is optimised to be as fluent as possible */
     @keyframes marquee {
-        0%   { transform: translateX(-15%); }
-        100% { transform: translateX(-48.5%); }
+        0%   { transform: translateX(-25%); }
+        100% { transform: translateX(-58.35%); }
     }
 
 }

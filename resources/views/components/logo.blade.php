@@ -1,6 +1,6 @@
 <div
     @php
-$skills = ['HTML', 'CSS','JavaScript','PHP', 'Laravel', 'Tailwind', 'Alpine.js','Livewire', 'StarUML', 'Git', 'MySQL', 'Python', 'Java', '.NET', 'React','Qlik'];
+$skills = ['HTML', 'CSS','JavaScript','Working in team', 'PHP', 'Laravel', 'Tailwind', 'Alpine.js','Livewire', 'Communication', 'StarUML', 'Git', 'Interacting professionally', 'MySQL', 'Python', 'Java', 'Docker', 'Acting as scrum master', '.NET', 'React','Qlik', 'Analitical thinking'];
 $colors = ['bg-sandy-brown-400','bg-light-green-400'];
  @endphp
 
@@ -24,8 +24,7 @@ $colors = ['bg-sandy-brown-400','bg-light-green-400'];
 
                 <div x-cloak x-show="seperate"
                      class="animate-marquee flex gap-6 transition-all duration-500 [&_span]:rounded-xl [&_span]:border-2 [&_span]:border-black [&_span]:dark:border-white [&_span]:p-2 [&_span]:whitespace-nowrap"
-                     x-effect="if (seperate){ $nextTick(() => $el.querySelectorAll('span.fade').forEach(s => s.classList.remove('opacity-0')))} else{$el.querySelectorAll('span.fade').forEach(s => s.classList.add('opacity-0'))}
-                     ">
+                     x-effect="if (seperate){ $nextTick(() => $el.querySelectorAll('span.fade').forEach(s => s.classList.remove('opacity-0')))} else{$el.querySelectorAll('span.fade').forEach(s => s.classList.add('opacity-0'))}">
                     {{-- First version (for loop to work) --}}
                     @foreach($skills as $index => $skill)
                         <span    class="{{$colors[$index%count($colors)]}} fade opacity-0"  style="transition-delay:24000ms">{{$skill}}</span>
