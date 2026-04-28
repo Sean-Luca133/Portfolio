@@ -9,7 +9,7 @@
 
             </p>
             <figure class="md:col-span-2 col-span-5 flex justify-center">
-                <img class="rounded-lg max-h-100" src="/storage/about_me.png" alt="About me image">
+                <img class="rounded-lg max-h-100 border-2 border-black dark:border-white" src="/storage/about_me.png" alt="About me image">
             </figure>
         </div>
     </x-slot:top>
@@ -29,7 +29,8 @@
                 <x-select_screen_button selected_project="1" image="poutrel_logo.png" name="Poutrel"/>
                 <x-select_screen_button selected_project="2" image="kvv_rauw.png" name="Kvv Rauw sport mol"/>
                 <x-select_screen_button selected_project="3" image="deltafan_logo.png" name="Delta fan"/>
-                <x-select_screen_button selected_project="4"/>
+                <x-select_screen_button selected_project="4" image="cycling_data_science.png"
+                                        name="Cycling data science project"/>
                 <x-select_screen_button selected_project="5" image="pokelab_logo.png" name="Pokélab"/>
                 <x-select_screen_button selected_project="6" image="accurate_pokedex.png" name="Accurate* pokedex"/>
             </div>
@@ -40,7 +41,8 @@
                     <div class="absolute top-1 right-1 cursor-pointer" @click="selected_project=0"><i
                             class="fa-solid fa-x"></i></div>
 
-                    <x-detail_menu show_number="1" image="poutrel_view.png" date="Semester 2, 2025-2026">
+                    <x-detail_menu show_number="1" image="poutrel_view.png" date="Semester 2, 2025-2026"
+                                   link="https://poutrel.quintedev.be">
                         <x-slot:name>Poutrel</x-slot:name>
                         <x-slot:summary>
                             This project was made for the second semester of Skills Integration Lab 2. In it I together
@@ -85,6 +87,7 @@
 
                     </x-detail_menu>
 
+
                     <x-detail_menu show_number="3" image="deltafan_view.png" link="https://delta-fan.delta-fan.be/"
                                    date="Semester 1, 2025-2026" individual>
                         <x-slot:name>Delta fan</x-slot:name>
@@ -93,7 +96,8 @@
                             chose what to base the to be made php site on. I chose to make a site all about Deltarune a
                             small indie game I really enjoyed. The project was made in Laravel php, also utilizing
                             tailwind for styling and livewire/alpine.js for interactivity, and hosted on
-                            combell. Fun fact this portfolio is on the same domain as this project.
+                            combell. Fun fact this portfolio is on the same domain as this project. Also if you want to
+                            log in please view the github repository located in the footer.
                         </x-slot:summary>
                         <x-slot:contributed>This website is build like a source of information about Deltarune, almost
                             like a wiki. It allows the user to watch news articles that adminastrators can write. You
@@ -105,15 +109,32 @@
                         </x-slot:learned>
 
                     </x-detail_menu>
-
-                    <x-detail_menu show_number="4" image="poutrel_view.png">
-                        <x-slot:name>KVV Rauw</x-slot:name>
+                    <x-detail_menu show_number="4" image="cycling_data_science_view.png" individual
+                                   date="Semester 1, 2025-2026"
+                                   link="https://github.com/Sean-Luca133/Data-science-cycling-wattage-project">
+                        <x-slot:name>Cycling data science project</x-slot:name>
                         <x-slot:summary>
-                            Een opdracht te maken voor Skil2
+                            This project was made for the course data science. In it I had to scrape, clean and
+                            visualize the a data set of choice about cycling. I took the direction in this project to
+                            try and find out about what wattage different riders or countries generate on average accros
+                            different accross races and how this evolved over the years. I decided to cover the Tour de
+                            France, the Giro and the Vuelta with ProCyclingStats as
+                            <a href="https://www.procyclingstats.com/"
+                               class="font-bold hover:text-sandy-brown-800 transition duration-200">datasource</a>. The
+                            entire project is made in python jupeter notebooks and viewable on github.
                         </x-slot:summary>
-                        <x-slot:learned>In groep werken via Jira. Php,...</x-slot:learned>
-                        <x-slot:contributed> Maarten,Quinte,Andreas, Sean-Luca</x-slot:contributed>
+                        <x-slot:contributed>This project consisted of the scrapping of the data on ProcyclingStats,
+                            which was followed by the cleaning of this data to be used to get insights. A insight I for
+                            example found was that the Wattage riders generated on average per race was normally
+                            distributed and that most riders generated between 350 and 400 Watt.
+                        </x-slot:contributed>
+                        <x-slot:learned>During this project I mostly improved my python skills especially related to
+                            scrapping and numpy. Also this project improved my view in working with data from scrapping
+                            to analysing.
+                        </x-slot:learned>
+
                     </x-detail_menu>
+
 
                     <x-detail_menu show_number="5" image="pokelab_view.png"
                                    link="https://github.com/MilanMartens/Pok-mon-Game"

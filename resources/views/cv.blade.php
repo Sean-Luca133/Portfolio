@@ -2,7 +2,7 @@
     <x-slot:top>
         <div class="my-5 mx-auto md:max-w-[65%] max-w-[90%] grid grid-cols-5 gap-4">
             <p class="md:col-span-3 col-span-5 self-center md:text-base text-sm">
-                Here you can review what my skills are and what/where I have studied. If you have nt-ot found out that
+                Here you can review what my skills are and what/where I have studied. If you have not found out that
                 you can click the logo here is a more structured view of my skills. Also my education from primary
                 school
                 until now is included. Finally, because this is the CV page you can view my CV by pressing the button at
@@ -10,7 +10,7 @@
 
             </p>
             <figure class="md:col-span-2 col-span-5 flex justify-center">
-                <img class="rounded-lg max-h-100" src="/storage/about_me.png" alt="About me image">
+                <img class="rounded-lg max-h-100 border-2 border-black dark:border-white" src="/storage/cv.png" alt="Cv image">
             </figure>
         </div>
     </x-slot:top>
@@ -41,17 +41,17 @@
                     <div class="[&_p]:text-xs">
                         <h4>Great</h4>
                         <p>Here are some technologies I have interacted with and think that I am rather good at.</p>
-                        <x-skill_list skill_items="HTML;Tailwind;Python;PHP;Laravel" color="green"/>
+                        <x-skill_list skill_items="HTML;Tailwind;Python;PHP" color="green"/>
                         <h4>Decent</h4>
                         <p>Here are some technologies I have interacted with and think that I am capable in.</p>
-                        <x-skill_list skill_items="CSS;StarUML;Git;Java;Alpine.js;.NET;React;Qlik;Livewire" color="yellow"/>
+                        <x-skill_list skill_items="CSS;StarUML;Git;Java;Alpine.js;.NET;Qlik;Livewire;Laravel" color="yellow"/>
                         <h4>OK</h4>
                         <p>Here are some technologies I have interacted with and think that I am not very great at right
                             now
                             but
                             could
                             be with some more practice.</p>
-                        <x-skill_list skill_items="JavaScript;MySQL;Docker" color="orange"/>
+                        <x-skill_list skill_items="JavaScript;MySQL;Docker;React" color="orange"/>
                     </div>
 
                     <h3 class="font-bold mt-2">Soft Skills</h3>

@@ -10,7 +10,7 @@
 
             </p>
             <figure class="md:col-span-2 col-span-5 flex justify-center">
-                <img class="rounded-lg max-h-100" src="/storage/about_me.png" alt="About me image">
+                <img class="rounded-lg max-h-100 border-2 border-black dark:border-white" src="/storage/about_me.png" alt="About me image">
             </figure>
         </div>
     </x-slot:top>
