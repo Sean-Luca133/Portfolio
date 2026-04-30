@@ -10,9 +10,9 @@
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 @stack('styles')
 </head>
-<body class="bg-dusty-olive-50 relative">
+<body class="h-[100vh] bg-dusty-olive-50 relative">
 <x-port_quest.navbar/>
-<div class="md:mx-5 mx-2">
+<div class="h-[70%] md:mx-5 mx-2">
     {{$slot}}
 </div>
 <div class="absolute bottom-0 w-[100%]">
