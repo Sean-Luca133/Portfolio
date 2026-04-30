@@ -2,15 +2,14 @@
     <x-slot:top>
         <div class="my-5 mx-auto md:max-w-[65%] max-w-[90%] grid grid-cols-5 gap-4">
             <p class="md:col-span-3 col-span-5 self-center md:text-base text-sm">
-                Here you can review what my skills are and what/where I have studied. If you have not found out that
-                you can click the logo here is a more structured view of my skills. Also my education from primary
-                school
-                until now is included. Finally, because this is the CV page you can view my CV by pressing the button at
-                the bottom of the page.
-
+                Here you can review what my skills are and what/where I have studied. If you have not found out that you
+                can click the logo yet, here is a more structured view of my skills. Also, my education from primary
+                school until now is included. Finally, because this is the CV page, you can view my CV by pressing the
+                button for it, which also allows you to download it as PDF.
             </p>
             <figure class="md:col-span-2 col-span-5 flex justify-center">
-                <img class="rounded-lg max-h-100 border-2 border-black dark:border-white" src="/storage/cv.png" alt="Cv image">
+                <img class="rounded-lg max-h-100 border-2 border-black dark:border-white" src="/storage/cv.png"
+                     alt="Cv image">
             </figure>
         </div>
     </x-slot:top>
@@ -21,8 +20,9 @@
                 class="cursor-pointer rounded-lg border-2 border-black p-2 inline-block bg-granite-200 hover:bg-granite-300 transition duration-200"
                 @click="show_cv = !show_cv">View CV
             </button>
-            <div x-show="show_cv" x-transition.duration.200ms class="flex justify-center"><a href="/storage/CV_Sean-Luca_Jansen.pdf" download
-                                                class=" cursor-pointer rounded-lg border-2 border-black p-2 inline-block bg-granite-200 hover:bg-granite-300 transition duration-200">
+            <div x-show="show_cv" x-transition.duration.200ms class="flex justify-center"><a
+                    href="/storage/CV_Sean-Luca_Jansen.pdf" download
+                    class=" cursor-pointer rounded-lg border-2 border-black p-2 inline-block bg-granite-200 hover:bg-granite-300 transition duration-200">
                     Download <i class="fa-solid fa-file-arrow-down"></i>
                 </a>
             </div>
@@ -35,28 +35,27 @@
                 <div class="p-3">
                     <h3 class="font-bold">Hard Skills</h3>
                     <p class="text-sm my-1">Here are some hard skills I have developed during my time at Thomas More.
-                        Sadly
-                        I can't be good at
-                        everything so they are shown in categories of how confident I am i them.</p>
+                        Sadly, I can't be good at everything, so they are shown in categories of how confident I am in
+                        them.</p>
                     <div class="[&_p]:text-xs">
                         <h4>Great</h4>
                         <p>Here are some technologies I have interacted with and think that I am rather good at.</p>
                         <x-skill_list skill_items="HTML;Tailwind;Python;PHP" color="green"/>
                         <h4>Decent</h4>
                         <p>Here are some technologies I have interacted with and think that I am capable in.</p>
-                        <x-skill_list skill_items="CSS;StarUML;Git;Java;Alpine.js;.NET;Qlik;Livewire;Laravel" color="yellow"/>
+                        <x-skill_list skill_items="CSS;StarUML;Git;Java;Alpine.js;.NET;Qlik;Livewire;Laravel"
+                                      color="yellow"/>
                         <h4>OK</h4>
                         <p>Here are some technologies I have interacted with and think that I am not very great at right
-                            now
-                            but
-                            could
-                            be with some more practice.</p>
+                            now, but could be with some more practice.</p>
                         <x-skill_list skill_items="JavaScript;MySQL;Docker;React" color="orange"/>
                     </div>
 
                     <h3 class="font-bold mt-2">Soft Skills</h3>
-                    <p class="text-sm my-1">Here are some soft skills I have developed during my time at Thomas More</p>
-                    <x-skill_list skill_items="Working team;Interacting professionally;Communication;Acting as scrummaster;Analitical thinking" color="granite"/>
+                    <p class="text-sm my-1">Here are some soft skills I have developed during my time at Thomas More.</p>
+                    <x-skill_list
+                        skill_items="Working team;Interacting professionally;Communication;Acting as scrummaster;Analitical thinking"
+                        color="granite"/>
                 </div>
             </div>
 
@@ -70,7 +69,7 @@
                         <h3>University</h3>
                         <h4>Thomas More (Geel)</h4>
                         <p>September 2024 - Now</p>
-                        <p>Study: Bachular Applied Computer Science</p></div>
+                        <p>Study: Bachelor Applied Computer Science</p></div>
 
                     <div><h3>Secondary school</h3>
                         <h4>Sint-Pieter institute (Turnhout)</h4>

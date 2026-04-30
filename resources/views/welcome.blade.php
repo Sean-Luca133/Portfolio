@@ -42,7 +42,7 @@
                     This is my online website used as a portfolio. It contains all that you need to know about me. From
                     how I really like to look at the small details of layouts or functionality of an application, to my
                     current skills, which are still improving to this day. So, if you need someone who enjoys looking at
-                    The details and wants an end result to be better than good, then you have landed on the right
+                    the details and wants an end result to be better than good, then you have landed on the right
                     URL.
                 </p>
                 <p class="text-sm font-main text-granite-800">To be more specific, you can find (even more) information
